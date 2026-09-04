@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vignesh P | Web Designer</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0b1120;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      background: rgba(11,17,32,0.95);
+      border-bottom: 1px solid #263248;
+    }
+
+    nav {
+      max-width: 1100px;
+      margin: auto;
+      padding: 18px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #38bdf8;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 100px 20px;
+    }
+
+    #home {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero {
+      max-width: 700px;
+    }
+
+    .hero h1 {
+      font-size: 55px;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 span {
+      color: #38bdf8;
+    }
+
+    .hero h2 {
+      color: #94a3b8;
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      color: #cbd5e1;
+      font-size: 17px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #38bdf8;
+      color: #06101c;
+      padding: 13px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .btn:hover {
+      opacity: 0.85;
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: white;
+      border: 1px solid #38bdf8;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 35px;
+      margin-bottom: 45px;
+    }
+
+    .title span {
+      color: #38bdf8;
+    }
+
+    .about {
+      text-align: center;
+      max-width: 750px;
+      margin: auto;
+      color: #cbd5e1;
+      font-size: 17px;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .skill {
+      background: #111a2e;
+      padding: 25px;
+      border: 1px solid #263248;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .skill h3 {
+      color: #38bdf8;
+      margin-bottom: 10px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .project {
+      background: #111a2e;
+      border: 1px solid #263248;
+      border-radius: 12px;
+      padding: 25px;
+    }
+
+    .project h3 {
+      color: #38bdf8;
+      margin-bottom: 10px;
+    }
+
+    .project p {
+      color: #cbd5e1;
+      margin-bottom: 15px;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      color: #cbd5e1;
+      margin: 10px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #070c17;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 750px) {
+      nav ul {
+        gap: 10px;
+      }
+
+      nav a {
+        font-size: 12px;
+      }
+
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      .skills,
+      .projects {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">Vignesh<span>.</span></div>
+
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HOME -->
+  <section id="home">
+    <div class="hero">
+      <h1>Hi, I'm <span>Vignesh P</span></h1>
+
+      <h2>Beginner Web Designer</h2>
+
+      <p>
+        I create clean, responsive and modern websites using HTML and CSS.
+        I'm currently looking for web design internship opportunities and
+        freelance projects.
+      </p>
+
+      <a href="#projects" class="btn">View Projects</a>
+      <a href="#contact" class="btn btn-outline">Contact Me</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2 class="title">About <span>Me</span></h2>
+
+    <div class="about">
+      <p>
+        I'm a B.Sc Artificial Intelligence and Machine Learning student
+        interested in web design and technology. I currently focus on
+        learning HTML and CSS and building practical projects.
+        My goal is to gain real-world experience through internships
+        and freelance web projects.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2 class="title">My <span>Skills</span></h2>
+
+    <div class="skills">
+
+      <div class="skill">
+        <h3>HTML</h3>
+        <p>Building structured and responsive web pages.</p>
+      </div>
+
+      <div class="skill">
+        <h3>CSS</h3>
+        <p>Creating modern layouts, colors and responsive designs.</p>
+      </div>
+
+      <div class="skill">
+        <h3>Web Design</h3>
+        <p>Designing simple and professional websites for businesses.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2 class="title">My <span>Projects</span></h2>
+
+    <div class="projects">
+
+      <div class="project">
+        <h3>King Covering Shoppy</h3>
+        <p>
+          A modern business website concept created using HTML and CSS.
+        </p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+
+      <div class="project">
+        <h3>Business Landing Page</h3>
+        <p>
+          A responsive landing page design for a small local business.
+        </p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+
+      <div class="project">
+        <h3>Personal Portfolio</h3>
+        <p>
+          My personal portfolio website showcasing my skills and projects.
+        </p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2 class="title">Contact <span>Me</span></h2>
+
+    <div class="contact">
+
+      <p>📱 Phone: 82489 52542</p>
+
+      <p>📧 Email: vp8382400@gmail.com</p>
+
+      <p>💻 Available for Web Design Internships & Freelance Projects</p>
+
+      <br>
+
+      <a
+        href="mailto:vp8382400@gmail.com"
+        class="btn">
+        Email Me
+      </a>
+
+      <a
+        href="https://wa.me/918248952542"
+        class="btn"
+        target="_blank">
+        WhatsApp Me
+      </a>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Vignesh P. All Rights Reserved.</p>
+  </footer>
+
+</body>
+  </html>
